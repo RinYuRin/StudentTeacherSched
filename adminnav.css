@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(image/bg3.jpg)no-repeat;
+  background-size: cover;
+}
+.container {
+  height: 100%;
+  width: 350px;
+  position: fixed ;
+  left: -100%;
+  transition: all 0.3s ease;
+}
+.container.active{
+    left: 0;
+}
+
+.container .bttnToggle {
+  position: fixed;
+  top: 3px;
+  left: 3px;
+  height: 45px;
+  width: 45px;
+  z-index: 999;
+  color: white;
+  background-color: #4a4a4a;
+  border: 1px solid #333;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.container #sidebar {
+  position: fixed;
+  height: 100%;
+  width: 250px;
+  background-color: #404040;
+  overflow: hidden;
+}
+
+#sidebar .menu {
+  color:white;
+  font-size: 25px;
+  background-color: #333;
+  line-height: 50px;
+  text-align: center;
+}
+
+#sidebar .item {
+  position: relative;
+  background-color: #404040;
+  list-style: none;
+}
+#sidebar .item li:hover {
+  box-shadow: 0 0 10px 3px #222;
+  border-top: 1px solid rgba(255, 255, 255, 0.1) transparent;
+  border-bottom: 1px solid #333 transparent;
+
+}
+
+#sidebar .item li {
+  padding-left: 40px;
+  line-height: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid #333;
+  transition: all 0.3s ease;
+}
+
+#sidebar .item li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  height: 100%;
+  width: 100%;
+  display: block;
+}

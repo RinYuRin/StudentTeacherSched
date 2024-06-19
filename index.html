@@ -1,0 +1,62 @@
+<!--HOME HTML-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <script>
+        function displaySuccessMessage() {
+          const urlParams = new URLSearchParams(window.location.search);
+          const successParam = urlParams.get('success');
+    
+          if (successParam === '1') {
+            alert('Successfully Logged In!');
+          }
+        }
+    
+        window.onload = displaySuccessMessage;
+      </script>
+    
+</head>
+<body>
+        <div class="wrapper1">
+            <header class="name">
+                <div class="icon">
+                    <a href="#"><img src="image/Logo.png" class="logo"></a>
+                  </div>
+                <ul class="NAV">
+                    <il><a href="index.html">Home</a></il>
+                    <il><a href="schedule.html">Schedule</a></il>
+                    <il><a href="About.html">About</a></il>
+                    <li><a href="admin.php"><i class="fa-solid fa-key"></i></a></li>
+                </ul>
+            </header>
+        </div>
+     
+    <form action="student_login.php" method="post">
+    <div class="container">
+        <div class="wrapper">
+            <div class="title"><span>Login Form</span></div>
+                <div class="row">
+                    <input type="text" id="student_id" name="student_id" placeholder="Student Number (ex. 12-34567)" required>
+                </div>
+                <div class="row">
+                    <input type="email" id="email" name="email" placeholder="Email (ex. asd@gmail.com)" required>
+                </div>
+                <div class="row">
+                    <input type="date" id="birthday" name="birthday" placeholder="birthday (ex. 1/29/2003)" required>
+                </div>
+            <div class="row-button">
+                    <input type="submit" value="Submit">
+                    <a href="register.html">register</a>
+            </div>
+        </div>
+    </div>
+    </form>
+    
+        
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!--HOME HTML-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front</title>
+    <link rel="stylesheet" href="register.css">
+    <script>
+        function displaySuccessMessage() {
+          const urlParams = new URLSearchParams(window.location.search);
+          const successParam = urlParams.get('success');
+    
+          if (successParam === '1') {
+            alert('Successfully Registered!');
+          }
+        }
+    
+        window.onload = displaySuccessMessage;
+      </script>
+    
+</head>
+<body>
+        <div class="wrapper1">
+            <header class="name">
+                <div class="icon">
+                    <a href="#"><img src="image/Logo.png" class="logo"></a>
+                  </div>
+                <ul class="NAV">
+                    <il><a href="index.html">Home</a></il>
+                    <il><a href="schedule.html">Schedule</a></il>
+                    <il><a href="About.html">About</a></il>
+                </ul>
+            </header>
+        </div>
+     
+    <form action="student_register.php" method="post">
+    <div class="container">
+        <div class="wrapper">
+            <div class="title"><span>Register Form</span></div>
+                <div class="row">
+                    <input type="text" id="student_id" name="student_id" placeholder="Student Number (ex. 12-34567)" required>
+                </div>
+                <div class="row">
+                    <input type="email" id="email" name="email" placeholder="Email (ex. asd@gmail.com)" required>
+                </div>
+                <div class="row">
+                    <input type="text" name="first_name" placeholder="First Name (ex.   Jhon)" required>
+                </div>
+                <div class="row">
+                    <input type="text" name="last_name" placeholder="Last Name (ex.   Doe)" required>
+                </div>
+                <div class="row">
+                    <input type="date" name="birthday" placeholder="Birthday (ex.   10/29/2003)" required>
+                </div>
+            <div class="row-button">
+                    <input type="submit" value="Submit">
+                    
+            </div>
+        </div>
+    </div>
+    </form>
+    
+        
+</body>
+</html>

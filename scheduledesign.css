@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+    padding: 0 ;
+    margin: 0; 
+}
+
+body {
+
+background-color: #000;
+ 
+
+
+}
+
+.name{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(37, 84, 3,.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.icon{
+    padding: 0.2%;
+}
+.logo{
+    width: 80px;
+}
+.brand{
+    font-size: 20px;
+    color: rgb(175, 240, 10);
+    text-decoration: none;
+    font-weight: 1000;
+}
+.NAV a{
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 45px;
+    margin-left: 10px;
+    color: white;
+    font-size: 20px;
+}
+.NAV a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    width: 0;
+    left:0;
+    height: 2px;
+    background: white;
+}
+.NAV a:hover::before{
+    width: 100%;
+}
+
+
+.header {
+    text-align: center;
+    font-size: larger;
+    color: white;
+    margin-top: 140px;
+    font-size: 35px;
+}
+
+
+
+.container {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin-top: 80px;
+   
+}
+
+
+.card {
+    background: white;
+    width: 350px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 15.5px;
+
+
+}
+
+.card-image {
+    background-color:white;
+    height: 190px;
+    margin-bottom: 15px;
+    background-size: cover;
+    
+
+}
+
+.cdm-1 {
+    background-image: url('image/Logo.png')
+}
+
+
+.cdm-2 {
+    background-image: url('image/Logo.png')
+}
+
+
+.cdm-3 {
+    background-image: url('image/Logo.png')
+}
+
+
+.cdm-4 {
+    background-image: url('image/Logo.png')
+}
+
+.cdm-5 {
+    background-image: url('image/Logo.png')
+}
+
+.cdm-6 {
+    background-image: url('image/Logo.png')
+}
+
+.cdm-7 {
+    background-image: url('image/Logo.png')
+}
+
+.cdm-8 {
+    background-image: url('image/Logo.png')
+}
+
+.cdm-9 {
+    background-image: url('image/Logo.png')
+}
+.cdm-10 {
+    background-image: url('image/Logo.png')
+}
+
+.cdm-11 {
+    background-image: url('image/Logo.png')
+}
+.cdm-12 {
+    background-image: url('image/Logo.png')
+}
+.cdm-13 {
+    background-image: url('image/Logo.png')
+}
+.cdm-14 {
+    background-image: url('image/Logo.png')
+}
+.cdm-15 {
+    background-image: url('image/Logo.png')
+}
+.cdm-16 {
+    background-image: url('image/Logo.png')
+}
+.cdm-17 {
+    background-image: url('image/Logo.png')
+}
+
+.cdm-18 {
+    background-image: url('image/Logo.png')
+}
+
+.cdm-19 {
+    background-image: url('image/Logo.png')
+}
+
+.cdm-20 {
+    background-image: url('image/Logo.png')
+}
+.cdm-21 {
+    background-image: url('image/Logo.png')
+}
+
+
+.cdm-22 {
+    background-image: url('image/Logo.png')
+}
+
+
+.cdm-23 {
+    background-image: url('image/Logo.png')
+}
+
+
+.cdm-20 {
+    background-image: url('image/Logo.png')
+}
+
+
+.cdm-24 {
+    background-image: url('image/Logo.png')
+}
+
+
+.cdm-25 {
+    background-image: url('image/Logo.png')
+}
+
+
+.cdm-26 {
+    background-image: url('image/Logo.png')
+}
+
+hr {
+    border: 1px solid #000;
+    margin: 0;
+    padding: 0;
+}
+
+.line {
+    width: 80%;
+    height: 7px;
+    border: none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 200px;
+    margin-bottom: 90px;
+    background-color: white;
+
+}
+
+
+
+
+
+
+.carda h4 {
+    padding: 10px;
+}
+
+
+.card:hover {
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all is ease;
+}
