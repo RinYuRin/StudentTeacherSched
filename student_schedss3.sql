@@ -40,13 +40,6 @@ CREATE TABLE `student_info` (
 -- Dumping data for table `student_info`
 --
 
-INSERT INTO `student_info` (`id`, `student_id`, `email`, `first_name`, `last_name`, `birthday`) VALUES
-(1, '22-00244', 'tutunganjameelu1@gmail.com', 'Jameel', 'Tutungan', '2004-07-10'),
-(2, '22-00922', 'degozaru2@protonmail.com', 'Xu', 'Rin', '2004-07-10'),
-(3, '22-01862', 'aldrinocampo102903@gmail.com', 'Aldrin', 'Ocampo', '2003-10-29'),
-(4, '22-01863', 'orakawayukirin102903@gmail.com', 'Yuki', 'Orakawa', '2003-10-29'),
-(5, '22-01864', 'ocamporinrin10292003@gmail.com', 'Azrael', 'King', '2003-10-29');
-
 -- --------------------------------------------------------
 
 --
@@ -63,26 +56,6 @@ CREATE TABLE `student_selected_schedule` (
 --
 -- Dumping data for table `student_selected_schedule`
 --
-
-INSERT INTO `student_selected_schedule` (`id`, `student_id`, `schedule_id`, `selected`) VALUES
-(48, '22-00922', 16, 1),
-(49, '22-00922', 22, 1),
-(50, '22-00922', 36, 1),
-(66, '22-00244', 34, 1),
-(67, '22-00244', 53, 1),
-(68, '22-00244', 120, 1),
-(69, '22-00244', 126, 1),
-(110, '22-01864', 1, 1),
-(111, '22-01864', 4, 1),
-(112, '22-01864', 7, 1),
-(113, '22-01864', 8, 1),
-(114, '22-01864', 12, 1),
-(115, '22-01864', 14, 1),
-(121, '22-01862', 28, 1),
-(122, '22-01862', 33, 1),
-(123, '22-01862', 40, 1),
-(124, '22-01862', 50, 1),
-(125, '22-01862', 61, 1);
 
 -- --------------------------------------------------------
 
